@@ -1518,3 +1518,71 @@ section {
 #footer .credits a {
   color: #9eccf4;
 }
+
+
+
+
+
+/*--------------------------------------------------------------
+# オリジナル　後から作成
+--------------------------------------------------------------*/
+
+
+/* 矢印アイコン */
+*#yazirusi {
+  padding: 45px;
+  margin-bottom: 30px;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+*#yazirusi .pc { display: inline-block !important;}
+*#yazirusi .sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+  *#yazirusi .pc { display: none !important; }
+  *#yazirusi .sp { display: inline-block !important; }
+}
+
+
+
+
+
+/* 圧縮時間の説明 */
+*#TAG_midashi {
+  padding: 1rem 3rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+  background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+}
+
+
+.about .github_bar{
+  height: 40px;
+}
+
+.about .github_bar h4 {
+
+  border-bottom: 5px solid #4993EB;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1rem;
+  position: relative;
+
+}
+
+.about .github_bar h4:before  {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 20%;
+  height: 5px;
+  content: '';
+  background: #125EB6;
+
+}
+
+
